@@ -5,6 +5,13 @@ This Vue 3 project will test you on the following:
 1. Reactivity and composables
 2. Shared state and Pinia
 
+3. 
+Check out [OurEventAlbum](https://oureventalbum.com)
+
+and 
+
+[MetaKit](https://metakit.app)
+
 ## Project setup
 
 Install:
