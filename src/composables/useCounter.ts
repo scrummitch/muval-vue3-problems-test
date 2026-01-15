@@ -1,4 +1,4 @@
-import { reactive } from 'vue'
+import { reactive, toRef } from 'vue'
 import type { MaybeRef } from 'vue'
 
 export function useCounter(initial_value: MaybeRef<number> = 0) {
@@ -7,5 +7,5 @@ export function useCounter(initial_value: MaybeRef<number> = 0) {
   })
   const increment = () => data.count++
 
-  return { ...data, increment }
+  return { count: toRef(data, 'count'), increment }
 }

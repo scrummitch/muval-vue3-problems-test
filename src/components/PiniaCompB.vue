@@ -8,5 +8,7 @@ const counterStore = useCounterStore()
   <div class="grid">
     <code>PiniaCompB.vue</code>
     <pre>{{ counterStore }}</pre>
+    <h1 class="text-4xl">{{ counterStore.count }}</h1>
+    <button @click="counterStore.increment">Add B</button>
   </div>
 </template>

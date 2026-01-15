@@ -4,7 +4,7 @@ import { useCounterStore } from '@/stores/counter'
 import PiniaCompA from '@/components/PiniaCompA.vue'
 import PiniaCompB from '@/components/PiniaCompB.vue'
 
-const { increment } = useCounterStore()
+const { increment, reset } = useCounterStore()
 </script>
 
 <template>
@@ -18,6 +18,8 @@ const { increment } = useCounterStore()
         <code>useCounterStore()</code> that mimics the same functionality as
         <code>useCounter()</code>, and allows the below two components to have shared state.
       </p>
+
+      <button @click="reset">Reset</button>
       <button @click="increment">Add</button>
       <div class="grid grid-cols-2 gap-2">
         <PiniaCompA />
